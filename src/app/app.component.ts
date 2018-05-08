@@ -1,5 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import {HerosComponent} from './heros/heros.component'
+
+
+@NgModule({
+  declarations:[HerosComponent],
+  imports: [
+    BrowserModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]})
 
 @Component({
   selector: 'app-root',
@@ -8,5 +18,5 @@ import {HerosComponent} from './heros/heros.component'
 })
 
 export class AppComponent {
-  title = 'app';
+  
 }
